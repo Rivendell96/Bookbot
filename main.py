@@ -4,9 +4,12 @@ def main():
     count_words = get_num_words(book_text)
     character_dict = get_chars_dict(book_text)
     
-    print(character_dict)
-    print(book_text)
-    print(count_words)
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"{count_words} words found in the document")
+    for name in character_dict:
+        if name.isalpha():
+            print(f"The {name} character was found {character_dict[name]} times")
+    print("--- End report ---")
 
 
 def get_chars_dict(text):
