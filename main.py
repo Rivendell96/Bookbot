@@ -8,7 +8,7 @@ def main():
     print(f"{count_words} words found in the document")
     for name in character_dict:
         if name.isalpha():
-            print(f"The {name} character was found {character_dict[name]} times")
+            print(f"The '{name}' character was found {character_dict[name]} times")
     print("--- End report ---")
 
 
